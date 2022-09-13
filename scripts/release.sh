@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEFAULT_BRANCH='main'
+DEFAULT_BRANCH='master'
 CURRENT_GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
 SRCDIR=${SRCDIR:-"."}
