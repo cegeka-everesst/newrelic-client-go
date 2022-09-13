@@ -1,3 +1,8 @@
+<a name="v1.0.2"></a>
+## [v1.0.2] - 2022-09-13
+### Bug Fixes
+- trigger release
+
 <a name="v1.0.1"></a>
 ## [v1.0.1] - 2022-09-13
 ### Bug Fixes
@@ -581,7 +586,6 @@
 - **workloads:** query with GUID per upstream API change
 - **workloads:** remove deprecated fields
 
-
-[Unreleased]: https://github.com/cegeka-everesst/newrelic-client-go/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/cegeka-everesst/newrelic-client-go/compare/v1.0.2...HEAD
+[v1.0.2]: https://github.com/cegeka-everesst/newrelic-client-go/compare/v1.0.1...v1.0.2
 [v1.0.1]: https://github.com/cegeka-everesst/newrelic-client-go/compare/v1.0.0...v1.0.1
-
