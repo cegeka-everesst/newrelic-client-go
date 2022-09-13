@@ -1,1598 +1,579 @@
-<a name="v0.91.1"></a>
-## [v0.91.1] - 2022-09-07
+<a name="v1.0.0"></a>
+## v1.0.0 - 2022-09-13
 ### Bug Fixes
-- **notifications:** add missing destination type via tutone
-
-<a name="v0.91.0"></a>
-## [v0.91.0] - 2022-08-17
-### Features
-- **dashboards:** added RawConfiguration structure
-
-<a name="v0.90.0"></a>
-## [v0.90.0] - 2022-08-15
-### Bug Fixes
-- **notifications:** fix tests
-
-### Features
-- **workflows:** fix lint
-- **workflows:** fix intgration tests
-- **workflows:** fix unit tests + add readme
-- **workflows:** add workflows API - fix tests
-- **workflows:** add workflows API
-
-<a name="v0.89.1"></a>
-## [v0.89.1] - 2022-08-15
-### Bug Fixes
-- **notifications:** add fileds to error interface
-
-<a name="v0.89.0"></a>
-## [v0.89.0] - 2022-08-01
-### Features
-- **synthetics:** generate code for queries synthetics.script and synthetics.steps
-
-<a name="v0.88.1"></a>
-## [v0.88.1] - 2022-07-24
-### Bug Fixes
-- **destinations:** change credentials type to pointer
-
-<a name="v0.88.0"></a>
-## [v0.88.0] - 2022-07-15
-### Bug Fixes
-- **channels:** add small fix
-- **channels:** add unit tests
-- **channels:** add integration tests and destinations missing data
-
-### Features
-- **channels:** remove duplicate declartion
-- **channels:** remove duplicate code and fix tests
-- **channels:** add notifications channels API using tutone tool
-
-<a name="v0.87.1"></a>
-## [v0.87.1] - 2022-07-14
-### Bug Fixes
-- **muting_rules:** client not setting err.NotFound
-
-<a name="v0.87.0"></a>
-## [v0.87.0] - 2022-07-13
-### Bug Fixes
-- **destinations:** add integration tests and unit tests
-- **destinations:** add integration tests + small fix for union type
-- **destinations:** use tutone generator
-- **destinations:** fix lint
-
-### Features
-- **destinations:** fix tests
-- **destinations:** fix tests
-- **notifications:** add notifications destinations api calls
-
-<a name="v0.86.5"></a>
-## [v0.86.5] - 2022-07-11
-### Bug Fixes
+- fix paging bug for v2 API
+- add godoc as a dep, and a warning about GOPATH and godoc
+- http client needs to handle other 'success' response status codes such as 201
+- fix monitor ID type and GetMonitor URL
+- update unit tests to use new method sigs
+- rename variables to fix redeclared error
+- add policy ID to alert condition
+- make use of ErrorNotFound type for Get methods that are based on List methods
+- retry HTTP requests on 429 status codes
 - change private location GUID to string from int
-
-<a name="v0.86.4"></a>
-## [v0.86.4] - 2022-07-08
-### Bug Fixes
-- remove deprecated field from service level query
-- remove deprecated field from service level query
-- **synthetics:** use *bool type to avoid removing false values
-
-<a name="v0.86.3"></a>
-## [v0.86.3] - 2022-06-27
-### Bug Fixes
-- **synthetics:** use *bool type to avoid removing false values
-
-<a name="v0.86.2"></a>
-## [v0.86.2] - 2022-06-23
-### Bug Fixes
-- remove deprecated field from service level query
-
-<a name="v0.86.1"></a>
-## [v0.86.1] - 2022-06-15
-### Bug Fixes
-- remove deprecated field from service level query
-
-<a name="v0.86.0"></a>
-## [v0.86.0] - 2022-06-06
-### Features
-- **http:** Add retry condition for graphql TOO_MANY_REQUESTS error response on json
-
-<a name="v0.85.0"></a>
-## [v0.85.0] - 2022-05-24
-### Features
-- added testing scripts to test synthetic monitors
-- added synthetics monitoring
-
-<a name="v0.84.0"></a>
-## [v0.84.0] - 2022-05-23
-### Features
-- **build:** upgrade to Go 1.18
-
-<a name="v0.83.0"></a>
-## [v0.83.0] - 2022-05-23
-### Features
-- Generate the client code for synthetics private locations
-
-<a name="v0.82.0"></a>
-## [v0.82.0] - 2022-05-23
-### Features
-- add entitySearch with query parameter
-
-<a name="v0.81.0"></a>
-## [v0.81.0] - 2022-05-23
-### Documentation Updates
-- add upgrade instructions and update example usage steps
-
-### Features
-- **dashboards:** remove deprecated and disabled legacy dashboards REST API methods
-
-<a name="v0.80.0"></a>
-## [v0.80.0] - 2022-05-12
-### Features
-- **alerts:** Adds 3 term threshold operators for NRQL conditions
-
-<a name="v0.79.0"></a>
-## [v0.79.0] - 2022-05-09
-### Features
-- add synthetics secure credentials GraphQL API
-
-<a name="v0.78.0"></a>
-## [v0.78.0] - 2022-04-28
-### Features
-- Expose EntityGUID on NRQL Conditions when using NerdGraph.
-
-<a name="v0.77.0"></a>
-## [v0.77.0] - 2022-04-28
-### Documentation Updates
-- update minimum Go version requirement in development section
-- Update example in readme to compile and run with v0.73.0
-
-### Features
-- Expose EntityGUID on NRQL Conditions.
-
-<a name="v0.76.0"></a>
-## [v0.76.0] - 2022-04-26
-### Features
-- **build:** compile on Go 1.17.x
-
-<a name="v0.75.0"></a>
-## [v0.75.0] - 2022-04-13
-### Features
-- **errors:** handle 402 payment required HTTP response scenario
-
-<a name="v0.74.2"></a>
-## [v0.74.2] - 2022-03-23
-### Bug Fixes
-- use correct input type for cloud disable integrations mutation
-
-<a name="v0.74.1"></a>
-## [v0.74.1] - 2022-03-04
-### Bug Fixes
-- remove integrations from getLinkedAccounts query
-
-<a name="v0.74.0"></a>
-## [v0.74.0] - 2022-03-03
-### Features
-- **auth:** Add X-Account-ID header if value exists in request context
-
-<a name="v0.73.0"></a>
-## [v0.73.0] - 2022-02-09
-### Features
-- **entities:** add new entity types
-
-<a name="v0.72.0"></a>
-## [v0.72.0] - 2022-02-01
-### Features
-- **nrql_conditions:** add optional SlideBy field to signal
-
-<a name="v0.71.0"></a>
-## [v0.71.0] - 2022-01-25
-### Features
-- **cloud:** add query to get a single linked account
-
-<a name="v0.70.0"></a>
-## [v0.70.0] - 2022-01-19
-### Features
-- **installevents:** add recipe event metadata field, update mutation via tutone
-
-<a name="v0.69.0"></a>
-## [v0.69.0] - 2021-12-28
-### Features
-- **events:** Add license key authorization for the Event API
-
-<a name="v0.68.3"></a>
-## [v0.68.3] - 2021-12-03
-### Bug Fixes
-- **dashboards:** make billboard widget thresholds optional, add test cases around them
-
-<a name="v0.68.2"></a>
-## [v0.68.2] - 2021-12-03
-### Bug Fixes
-- **entities:** handle deprecated field errors in tests
-- **http:** check if the NerdGraph error is a deprecation warning, and still pass on the response (with error)
-
-<a name="v0.68.1"></a>
-## [v0.68.1] - 2021-11-29
-### Bug Fixes
-- **release:** use our changelog for release notes
-
-<a name="v0.68.0"></a>
-## [v0.68.0] - 2021-10-22
-### Features
-- use improved error handling for muting rules
-
-<a name="v0.67.0"></a>
-## [v0.67.0] - 2021-10-21
-### Features
-- **tags:** added method to get only mutable tags
-
-<a name="v0.66.2"></a>
-## [v0.66.2] - 2021-10-21
-### Bug Fixes
+- remove goreleaser
 - update NRQL query for alert condition tests
-
-<a name="v0.66.1"></a>
-## [v0.66.1] - 2021-10-07
-### Bug Fixes
+- fix http client compression
+- add goreleaser back
+- remove deprecated field from service level query
+- remove deprecated field from service level query
+- type for validation duration
+- remove integrations from getLinkedAccounts query
+- retire usages of deprecated error schema
+- update error handling code for alert policies
+- allow string representations of JSON for alert channel webhook and payload
+- override ID type as string
+- update error handling to reflect schema changes
 - use pointer for EvaluationOffset
-
-<a name="v0.66.0"></a>
-## [v0.66.0] - 2021-10-06
-### Features
-- Provide additional context in GraphQL errors for Alerts operations
-
-<a name="v0.65.0"></a>
-## [v0.65.0] - 2021-10-05
-### Features
-- **alerts:** streaming triggers for nrql alerts
-
-<a name="v0.64.1"></a>
-## [v0.64.1] - 2021-09-28
-### Bug Fixes
 - add spell check for auto-generated CHANGELOG.md
 - let goreleaser generate the release notes. git-chglog for CHANGELOG
-
-<a name="v0.64.0"></a>
-## [v0.64.0] - 2021-09-28
-### Features
-- **install:** add DETECTED status via code gen
-
-<a name="v0.63.5"></a>
-## [v0.63.5] - 2021-09-27
-### Bug Fixes
-- **build:** more error checking in the release script
-
-<a name="v0.63.4"></a>
-## [v0.63.4] - 2021-09-24
-### Bug Fixes
-- release test
-
-<a name="v0.63.3"></a>
-## [v0.63.3] - 2021-09-24
-### Bug Fixes
 - release test
 - release test
-
-<a name="v0.63.2"></a>
-## [v0.63.2] - 2021-09-23
-### Bug Fixes
 - release test
-
-<a name="v0.63.1"></a>
-## [v0.63.1] - 2021-09-23
-### Bug Fixes
+- release test
+- release test
 - add additional output to verify release tag info
 - update to correct current version in version.go
 - use all branches for tag-mode  to get current and next tag with svu
-- release test
+- use correct input type for cloud disable integrations mutation
 - release test
 - release test
 - release
-- **servicelevel:** Update code gen strategy
-
-<a name="v0.63.0"></a>
-## [v0.63.0] - 2021-09-21
-### Bug Fixes
-- **servicelevel:** avoid import cycle
-- **servicelevel:** Initialize service level API with config
-
-### Features
-- **servicelevel:** update code gen strategy
-- **servicelevel:** generate servicelevel API
-
-### Refactor
-- move EntityGUID to a common package
-
-<a name="v0.62.1"></a>
-## [v0.62.1] - 2021-08-04
-### Bug Fixes
-- update error handling to reflect schema changes
-
-<a name="v0.62.0"></a>
-## [v0.62.0] - 2021-08-03
-### Bug Fixes
-- override ID type as string
-
-### Features
-- add installstatus schema for install-events-service
-
-### Refactor
-- delete installationeventresult if statement
-
-<a name="v0.61.4"></a>
-## [v0.61.4] - 2021-07-28
-### Bug Fixes
-- update error handling code for alert policies
-
-<a name="v0.61.3"></a>
-## [v0.61.3] - 2021-07-28
-### Bug Fixes
-- retire usages of deprecated error schema
-
-<a name="v0.61.2"></a>
-## [v0.61.2] - 2021-07-22
-### Bug Fixes
-- **logging:** export LogrusLogger for use in other projects
-
-<a name="v0.61.1"></a>
-## [v0.61.1] - 2021-07-20
-### Bug Fixes
-- **dashboard:** skip DashboardBillboardWidgetThresholdInput not DashboardBillboardWidgetConfigurationInput
-
-### Refactor
-- **tutone:** Add error wrapping to mutation results
-
-<a name="v0.61.0"></a>
-## [v0.61.0] - 2021-07-13
-### Bug Fixes
-- type for validation duration
-- **dashboard:** Linked entities must be the page GUID, update the test
-
-### Features
-- **Error:** Add InvalidInput error
-- **installevents:** start package to track install-events-service
-
-<a name="v0.60.2"></a>
-## [v0.60.2] - 2021-06-29
-<a name="v0.60.1"></a>
-## [v0.60.1] - 2021-06-28
-### Features
-- **apiaccess:** add context-aware methods for insights keys
-- **entity:** Add EntityInterface.GetTags()
-- **events:** add context-aware method to event creation method
-
-### Refactor
-- **workloads:** Generate workload code, deprecate old functions
-
-<a name="v0.60.0"></a>
-## [v0.60.0] - 2021-06-11
-### Bug Fixes
-- **client:** remove over-strict cast
-
-### Features
-- add context-aware methods
-
-<a name="v0.59.4"></a>
-## [v0.59.4] - 2021-06-10
-### Bug Fixes
-- **dashboards:** remove goldenTags from dashboard query
-
-<a name="v0.59.3"></a>
-## [v0.59.3] - 2021-06-10
-### Bug Fixes
-- **dashboards:** remove goldenMetrics from dashboard query
-
-<a name="v0.59.2"></a>
-## [v0.59.2] - 2021-06-10
-### Bug Fixes
-- **apm:** remove applicationsREST unused funcs
-- **http:** Look inside response body for downstream NotFound errors
-
-### Features
-- **apm:** allow passing context to apm methods
-- **apm:** allow passing context to applicationsREST funcs
-
-<a name="v0.59.1"></a>
-## [v0.59.1] - 2021-05-24
-### Bug Fixes
-- **region:** fix insights key management api url
-
-<a name="v0.59.0"></a>
-## [v0.59.0] - 2021-05-13
-### Features
-- **apiaccess:** add methods for managing insights insert keys
-- **serialization:** Add Unix() command to EpochTime
-
-<a name="v0.58.5"></a>
-## [v0.58.5] - 2021-04-27
-### Bug Fixes
-- **graphql:** retry on server errors
-
-<a name="v0.58.4"></a>
-## [v0.58.4] - 2021-04-15
-### Bug Fixes
-- **cloud:** regenerate types
-- **synthetics:** add paging to monitors resource
-
-<a name="v0.58.3"></a>
-## [v0.58.3] - 2021-02-19
-### Bug Fixes
-- **dashboards:** return an error.NotFound instead of nil
-
-<a name="v0.58.2"></a>
-## [v0.58.2] - 2021-02-18
-### Bug Fixes
-- **dashboards:** Prevent nil dereference on GetDashboardEntity
-
-<a name="v0.58.1"></a>
-## [v0.58.1] - 2021-02-17
-### Bug Fixes
-- **dashboards:** Return rawConfiguration on get, needed for all viz types
-- **nrqldroprules:** Actually return Nrqldroprules client
-- **region_constants:** corrected insightsBaseURL for EU
-
-### Features
-- **alerts:** adding id to alertsMutingRulesQuery
-
-<a name="v0.58.0"></a>
-## [v0.58.0] - 2021-02-12
-### Bug Fixes
-- **typegen:** do not attempt to unmarshal null data
-
-### Features
-- **nrqldroprules:** Implement NrqlDropRules
-
-### Refactor
-- Update all code-gen unmarshals with new typegen template
-
-<a name="v0.57.2"></a>
-## [v0.57.2] - 2021-02-01
-### Refactor
-- **alerts:** remove omitEmpty from MutingRuleScheduleUpdateInput
-
-<a name="v0.57.1"></a>
-## [v0.57.1] - 2021-01-29
-### Refactor
-- Tutone auto-naming conflict with schema
-- EpochTime as a pointer to allow for null value in JSON unmarshaling
-
-<a name="v0.57.0"></a>
-## [v0.57.0] - 2021-01-27
-### Bug Fixes
-- **dashboards:** MANUAL CHANGE: remove queries until it is out of the schema
-
-### Features
-- **users:** Add users package, and replace references in existing packages
-- **users:** Add users package
-
-<a name="v0.56.2"></a>
-## [v0.56.2] - 2021-01-22
-### Bug Fixes
-- **dashboard:** Fetch permalink for dashboards
-
-<a name="v0.56.1"></a>
-## [v0.56.1] - 2021-01-22
-### Bug Fixes
-- **http:** fix panics when resp is nil
-
-### Refactor
-- **testhelpers:** Remove hard-coded TestAccountID
-
-<a name="v0.56.0"></a>
-## [v0.56.0] - 2021-01-22
-### Bug Fixes
-- **http:** display underlying errors on max retries
-
-### Features
-- **alerts:** Add muting rule schedule fields
-- **dashboards:** add linkedEntities to getDashboardEntityQuery
-
-<a name="v0.55.8"></a>
-## [v0.55.8] - 2021-01-15
-### Refactor
-- **dashboards:** Use nrqlQueries in place of queries
-
-<a name="v0.55.7"></a>
-## [v0.55.7] - 2021-01-15
-<a name="v0.55.6"></a>
-## [v0.55.6] - 2021-01-15
-<a name="v0.55.5"></a>
-## [v0.55.5] - 2021-01-14
-### Bug Fixes
-- **entities:** unmarshal Minutes as an int
-
-<a name="v0.55.4"></a>
-## [v0.55.4] - 2021-01-13
-### Bug Fixes
-- **http:** move logger initialization to NewClient()
-
-<a name="v0.55.3"></a>
-## [v0.55.3] - 2021-01-12
-### Bug Fixes
-- **dashboards:** remove manual changes so code generation works again
-
-<a name="v0.55.2"></a>
-## [v0.55.2] - 2021-01-11
-### Bug Fixes
-- **http:** slightly better error message for 401 status code
-
-<a name="v0.55.1"></a>
-## [v0.55.1] - 2021-01-11
-### Bug Fixes
-- **dashboards:** DashboardWidgetConfigurationInput needs to be nullable
-
-<a name="v0.55.0"></a>
-## [v0.55.0] - 2021-01-05
-### Features
-- **entities:** Add more methods to Entity(Outline)Interface
-
-<a name="v0.54.1"></a>
-## [v0.54.1] - 2021-01-05
-<a name="v0.54.0"></a>
-## [v0.54.0] - 2021-01-04
-### Features
-- **entities:** Generate Getter helpers for EntityInterfaces
-
-### Refactor
-- **entities:** change the get functions to not be on ptrs
-
-<a name="v0.53.0"></a>
-## [v0.53.0] - 2020-12-28
-### Bug Fixes
-- **entities:** DashboardWidgetRawConfiguration custom unmarshal as []byte (raw JSON)
-- **entities:** Force ID fields to be a string
-- **nerdgraphclient:** Template fixes to prevent nil pointers
-- **typegen:** Avoid nil pointer on custom UnmarshalJSON
-
-### Features
-- **dashboards:** Add GetDashboardEntity()
-- **dashboards:** Auto-generate GraphQL code for dashboards (early access)
-- **entities:** Code-gen tag mutations
-- **entities:** Mostly code generated Entities queries (entities/entity/entitySearch)
-
-### Refactor
-- DRY up some of the time based items into nrtime
-- Add omitempty to nullable and input objects for all packages
-- Selective generation on type in Entities, Infrastructure, and NerdStorage
-- **cloud:** Cloud auto-generating via tutone
-- **entities:** DRY up Nrdb from Entities
-- **entities:** Cleanup unused structs in entities
-- **typegen:** If we override a type to be in another package, properly generate the Unmarshal func call
-
-<a name="v0.52.0"></a>
-## [v0.52.0] - 2020-12-08
-### Bug Fixes
-- **typegen:** Avoid nil pointer on unmarshall
-
-### Features
-- **accounts:** Add AccountReference
-- **nrql_conditions:** add violation_time_limit_seconds
-
-<a name="v0.51.0"></a>
-## [v0.51.0] - 2020-12-01
-### Features
-- **alerts:** allow passing context to alerts methods
-- **nerdgraph:** allow passing context to underlying client
-- **nrdb:** allow passing context to nrdb query methods
-
-<a name="v0.50.0"></a>
-## [v0.50.0] - 2020-11-20
-### Features
-- **nerdgraph:** allow custom unmarshal structs for queries
-
-<a name="v0.49.0"></a>
-## [v0.49.0] - 2020-11-13
-### Bug Fixes
-- **graphql:** include downstream error retry condition
-
-### Features
-- **config:** add a local region
-
-<a name="v0.48.1"></a>
-## [v0.48.1] - 2020-11-10
-### Bug Fixes
-- **http:** include INTERNAL_SERVER_ERROR as a retry reason
-- **muting_rules:** ensure updates to disable rule are respected
-
-<a name="v0.48.0"></a>
-## [v0.48.0] - 2020-11-04
-### Bug Fixes
-- **cloud:** manually update generated code to fix cloud account methods
-
-### Documentation Updates
-- **cloud:** add cloud account resource example
-
-### Features
-- **cloud:** add cloud domain to client API
-
-<a name="v0.47.3"></a>
-## [v0.47.3] - 2020-10-28
-### Bug Fixes
-- **apm:** add extra comments
-- **apm:** fix linting error
-- **apm:** add backwards compatible fix and test
-
-<a name="v0.47.2"></a>
-## [v0.47.2] - 2020-10-27
-### Bug Fixes
-- **alerts:** don't omitempty for muting rule's enabled field
-
-<a name="v0.47.1"></a>
-## [v0.47.1] - 2020-10-23
-### Bug Fixes
-- **alerts:** remove pagination from ListMultiLocationSyntheticsConditions
-- **http:** include 500 errors in reasons to retry requests
-
-<a name="v0.47.0"></a>
-## [v0.47.0] - 2020-10-16
-### Features
-- **http:** retry on nerdgraph server timeout
-
-<a name="v0.46.0"></a>
-## [v0.46.0] - 2020-10-15
-### Bug Fixes
-- **alerts:** make error handling more resilient for alert policies
-- **build:** update changelog action for improved standards
-- **build:** use DTK token for auto-PR process
-- **edge:** trace observer schema updates
-
-### Documentation Updates
-- update changelog
-
-### Features
-- **cloud:** include initial cloud client support
-
-<a name="v0.45.0"></a>
-## [v0.45.0] - 2020-10-05
-### Documentation Updates
-- update changelog
-
-### Features
-- **nrql alert condition:** add signal.aggregation_window
-
-<a name="v0.44.0"></a>
-## [v0.44.0] - 2020-10-02
-### Documentation Updates
-- update changelog
-
-### Features
-- remove admin API key as an authentication mechanism
-- **application_instances:** add an application instance resource
-
-<a name="v0.43.0"></a>
-## [v0.43.0] - 2020-10-01
-### Documentation Updates
-- update changelog
-
-### Features
-- **synthetics:** change resources to use personal api keys
-
-<a name="v0.42.1"></a>
-## [v0.42.1] - 2020-09-30
-### Bug Fixes
-- **events:** dereference the data pointer
-
-### Documentation Updates
-- update supported Go information and test config
-
-<a name="v0.42.0"></a>
-## [v0.42.0] - 2020-09-23
-### Features
-- **alerts:** enable personal api key auth for infra conditions
-
-<a name="v0.41.2"></a>
-## [v0.41.2] - 2020-09-16
-### Refactor
-- **alerts:** remove widespread change, limit scope to only nrql condition error resp handling
-
-<a name="v0.41.1"></a>
-## [v0.41.1] - 2020-09-15
-### Bug Fixes
-- **http:** handle 'not found' downstream response
-
-<a name="v0.41.0"></a>
-## [v0.41.0] - 2020-09-11
-### Bug Fixes
-- **entities:** filter out read-only tag values
-
-### Features
-- **logs:** support insert key
-
-<a name="v0.40.0"></a>
-## [v0.40.0] - 2020-09-04
-### Features
-- **alerts:** add new fields 'expiration' and 'signal' to nrql_conditions
-
-<a name="v0.39.0"></a>
-## [v0.39.0] - 2020-08-27
-### Features
-- **logs:** implement log batch mode
-- **logs:** implement log batch mode
-
-<a name="v0.38.0"></a>
-## [v0.38.0] - 2020-08-25
-### Bug Fixes
-- **changelog:** drop reviewers and assignees
-
-### Documentation Updates
-- update changelog
-
-### Features
-- **logs:** Implement Log API
-
-<a name="v0.37.0"></a>
-## [v0.37.0] - 2020-08-20
-### Features
-- **apiaccess:** add search api access keys method
-
-<a name="v0.36.0"></a>
-## [v0.36.0] - 2020-08-20
-### Features
-- **apiaccesskeys:** add new api access keys package
-
-<a name="v0.35.1"></a>
-## [v0.35.1] - 2020-08-03
-### Bug Fixes
-- **newrelic:** Allow just an insert key for the newrelic package
-
-<a name="v0.35.0"></a>
-## [v0.35.0] - 2020-08-03
-### Features
-- **events:** Batch event insertion
-
-<a name="v0.34.0"></a>
-## [v0.34.0] - 2020-07-30
-### Bug Fixes
-- **alerts:** infra condition threshold value should be pointer to support zero-value thresholds
-- **alerts:** always send infra condition description even if its an empty string
-- **region:** make ConfigRegion case-insensitive
-
-### Documentation Updates
-- update README.md
-
-### Features
-- **graphql:** capture validation error output from response
-
-<a name="v0.33.2"></a>
-## [v0.33.2] - 2020-07-27
-### Bug Fixes
-- **alerts:** infra condition threshold value should be pointer to support zero-value thresholds
-
-<a name="v0.33.1"></a>
-## [v0.33.1] - 2020-07-24
-### Bug Fixes
-- **alerts:** always send infra condition description even if its an empty string
-
-<a name="v0.33.0"></a>
-## [v0.33.0] - 2020-07-23
-### Bug Fixes
-- fix http client compression
-- **build:** run generate-tutone once per make command
-
-### Features
-- add a custom event resource
-- **alerts:** add description field to infra alert condition
-
-<a name="v0.32.1"></a>
-## [v0.32.1] - 2020-07-17
-### Bug Fixes
 - **accounts:** add accounts API to client
-- **nrql_conditions:** proper zero-value marshalling for threshold
-
-<a name="v0.32.0"></a>
-## [v0.32.0] - 2020-07-10
-### Features
-- **accounts:** add an accounts resource
-- **synthetics:** add a monitor locations resource
-
-<a name="v0.31.3"></a>
-## [v0.31.3] - 2020-07-02
-### Bug Fixes
-- **alerts:** allow a value of 0 for NRQL condition thresholds
-
-<a name="v0.31.2"></a>
-## [v0.31.2] - 2020-07-01
-### Bug Fixes
-- **alerts:** better nerdgraph operator usage
-
-<a name="v0.31.1"></a>
-## [v0.31.1] - 2020-06-26
-### Bug Fixes
-- **alerts:** drop incorrect MonitorID flag from MultiLocationSyntheticsCondition
-
-<a name="v0.31.0"></a>
-## [v0.31.0] - 2020-06-18
-### Bug Fixes
-- add goreleaser back
-- remove goreleaser
-
-### Features
-- **entities:** surface underlying application IDs for mobile application entities
-- **eventstometrics:** add EventsToMetrics
-
-<a name="v0.30.2"></a>
-## [v0.30.2] - 2020-06-15
-### Bug Fixes
-- **nrdb:** Add String() to Epoch* types
-- **serialization:** set tz UTC on MarshalJSON
-- **serialization:** Fix nanosecond handling, set tz UTC, add EpochTime.String()
-
-<a name="v0.30.1"></a>
-## [v0.30.1] - 2020-06-12
-### Bug Fixes
-- **deps:** revert goreleaser v0.138.0 (causing import issues)
-
-<a name="v0.30.0"></a>
-## [v0.30.0] - 2020-06-12
-### Features
-- **nrdb:** Fetch nrql query history
-
-<a name="v0.29.1"></a>
-## [v0.29.1] - 2020-06-10
-### Bug Fixes
-- **nrdb:** Correctly unwrap the graphql context for Query, better testing
-
-<a name="v0.29.0"></a>
-## [v0.29.0] - 2020-06-10
-### Bug Fixes
-- **nerdgraph:** Add omitempty for yaml output
-- **typegen:** Remove some overrides so types are generated without modifications
-
-### Features
-- **nrdb:** Add nrdb.Query(acct, NRQL) via NerdGraph
-- **typegen:** Add imports to typegen
-
-<a name="v0.28.1"></a>
-## [v0.28.1] - 2020-06-03
-### Bug Fixes
-- **alerts:** add missing Outlier type to condition NrqlConditionTypes enum
-
-<a name="v0.28.0"></a>
-## [v0.28.0] - 2020-06-03
-### Bug Fixes
-- **alerts:** rename NrqlConditionTerms to singular for accuracy
-
-### Features
-- **alerts:** add DeleteNrqlConditionMutation as a proxy to DeleteConditionMutation
-- **alerts:** add UpdateNrqlConditionOutlierMutation method for updating outlier NRQL alert conditions
-- **alerts:** add CreateNrqlConditionOutlierMutation method for creating outlier NRQL alert conditions
-
-### Refactor
-- **nrql_conditions:** conditionID should be a string for consistency in ng implementation
-
-<a name="v0.27.1"></a>
-## [v0.27.1] - 2020-05-29
-### Bug Fixes
-- **serialization:** EpochTime handling of Unix timestamp with milliseconds
-
-### Refactor
-- **alerts:** update NG-based condition IDs to string type
-
-<a name="v0.27.0"></a>
-## [v0.27.0] - 2020-05-28
-### Refactor
-- **alerts:** update NG-based policy and condition IDs to string types
-
-<a name="v0.26.0"></a>
-## [v0.26.0] - 2020-05-27
-### Bug Fixes
-- **http:** Use default User-Agent header if none provided
-- **http:** Refactor config.Compression and use it in http
-
-### Features
-- **http:** Enable compression handling for requests, consolidate POST methods
-- **region:** Add Insights insert API URLs
-
-<a name="v0.25.1"></a>
-## [v0.25.1] - 2020-05-20
-### Bug Fixes
+- **alerts:** include "equal" operator for NRQL condition terms
+- **alerts:** remove pagination from ListMultiLocationSyntheticsConditions
+- **alerts:** make error handling more resilient for alert policies
+- **alerts:** don't omitempty for muting rule's enabled field
+- **alerts:** ensure multiple channels can be added via /alerts_policy_channel.json endpoint ([#114](https://github.com/newrelic/newrelic-client-go/issues/114))
+- **alerts:** handle more complex JSON structures in headers and/or payload
+- **alerts:** add custom unmarshaling for ConditionTerm
+- **alerts:** Updating incorrect AlertEvents params
+- **alerts:** allow blank runbook URL to be sent
+- **alerts:** infra condition threshold value should be pointer to support zero-value thresholds
 - **alerts:** fix json tag for NrqlConditionInput.ValueFunction
-
-<a name="v0.25.0"></a>
-## [v0.25.0] - 2020-05-20
-### Features
-- enable APIKS auth for alerts and plugins packages
-- **alerts:** add nerdgraph-based alert condition deletion
-
-<a name="v0.24.1"></a>
-## [v0.24.1] - 2020-05-19
-### Bug Fixes
+- **alerts:** allow a value of 0 for NRQL condition thresholds
+- **alerts:** better nerdgraph operator usage
+- **alerts:** policy update response test
+- **alerts:** return a NotFound error when policies are not found in NerdGraph
+- **alerts:** include missing types to generate
+- **alerts:** use pointers for the result struct
+- **alerts:** drop incorrect MonitorID flag from MultiLocationSyntheticsCondition
+- **alerts:** custom unmarshal of channel configuration Headers and Payload fields ([#102](https://github.com/newrelic/newrelic-client-go/issues/102))
+- **alerts:** always send infra condition description even if its an empty string
+- **alerts:** add missing Outlier type to condition NrqlConditionTypes enum
+- **alerts:** rename NrqlConditionTerms to singular for accuracy
+- **alerts:** Alerts paging was incorrectly generating URLs
+- **apm:** add extra comments
+- **apm:** add backwards compatible fix and test
 - **apm:** don't return empty zero values for floats for MetricTimesliceValues which can be misleading
 - **apm:** adjust MetricDataParams json tags to support query params as arrays
-
-<a name="v0.24.0"></a>
-## [v0.24.0] - 2020-05-15
-### Features
-- **edge:** add trace observer resource
-
-<a name="v0.23.4"></a>
-## [v0.23.4] - 2020-05-13
-### Bug Fixes
-- **alerts:** allow blank runbook URL to be sent
-
-<a name="v0.23.3"></a>
-## [v0.23.3] - 2020-05-12
-### Bug Fixes
+- **apm:** remove unused field
+- **apm:** remove applicationsREST unused funcs
+- **apm:** fix linting error
+- **build:** run generate-tutone once per make command
+- **build:** goreleaser now supports libraries, remove hack in config, skip build
+- **build:** use DTK token for auto-PR process
+- **build:** Github actions `make lint` for commit messages need full history
+- **build:** update changelog action for improved standards
+- **build:** more error checking in the release script
+- **build:** Remove working dir config for CircleCI
+- **build:** Force pull tags after each checkout
+- **changelog:** drop reviewers and assignees
+- **channels:** add small fix
+- **channels:** add unit tests
+- **channels:** add integration tests and destinations missing data
+- **client:** remove over-strict cast
+- **cloud:** regenerate types
+- **cloud:** manually update generated code to fix cloud account methods
+- **dashboard:** Linked entities must be the page GUID, update the test
+- **dashboard:** skip DashboardBillboardWidgetThresholdInput not DashboardBillboardWidgetConfigurationInput
+- **dashboard:** Fetch permalink for dashboards
+- **dashboards:** return an error.NotFound instead of nil
+- **dashboards:** remove goldenMetrics from dashboard query
+- **dashboards:** Prevent nil dereference on GetDashboardEntity
+- **dashboards:** Return rawConfiguration on get, needed for all viz types
+- **dashboards:** MANUAL CHANGE: remove queries until it is out of the schema
+- **dashboards:** DashboardWidgetConfigurationInput needs to be nullable
+- **dashboards:** remove goldenTags from dashboard query
+- **dashboards:** remove manual changes so code generation works again
+- **dashboards:** make billboard widget thresholds optional, add test cases around them
+- **deps:** revert goreleaser v0.138.0 (causing import issues)
+- **destinations:** fix lint
+- **destinations:** add integration tests and unit tests
+- **destinations:** use tutone generator
+- **destinations:** add integration tests + small fix for union type
+- **destinations:** change credentials type to pointer
+- **docs:** Fix the release badge
+- **edge:** trace observer schema updates
+- **entities:** tags filter needs to use type TagValue in graphql query
+- **entities:** Make ApplicationID optional in results, omit if not returned by the API
+- **entities:** unmarshal Minutes as an int
+- **entities:** Force ID fields to be a string
+- **entities:** include applicationId for ApmApplicationEntity results
+- **entities:** handle deprecated field errors in tests
+- **entities:** filter out read-only tag values
+- **entities:** DashboardWidgetRawConfiguration custom unmarshal as []byte (raw JSON)
+- **events:** dereference the data pointer
+- **graphql:** retry on server errors
+- **graphql:** include downstream error retry condition
+- **http:** display underlying errors on max retries
+- **http:** create a new errorValue for every request
+- **http:** include 500 errors in reasons to retry requests
+- **http:** Clear client responses between pages
+- **http:** Use default User-Agent header if none provided
+- **http:** Refactor config.Compression and use it in http
+- **http:** fix panics when resp is nil
+- **http:** move logger initialization to NewClient()
+- **http:** slightly better error message for 401 status code
+- **http:** Look inside response body for downstream NotFound errors
+- **http:** check if the NerdGraph error is a deprecation warning, and still pass on the response (with error)
+- **http:** include INTERNAL_SERVER_ERROR as a retry reason
+- **http:** handle 'not found' downstream response
+- **http:** allow overriding of service name
+- **lint:** formatting fixes for linter
+- **logging:** export LogrusLogger for use in other projects
+- **logging:** use global methods for the default logger rather than a logrus instance
+- **muting_rules:** ensure updates to disable rule are respected
+- **muting_rules:** client not setting err.NotFound
+- **nerdgraph:** Add omitempty for yaml output
+- **nerdgraphclient:** Template fixes to prevent nil pointers
+- **newrelic:** Add option to set ServiceName in Config
+- **newrelic:** Allow just an insert key for the newrelic package
+- **notifications:** fix tests
+- **notifications:** add missing destination type via tutone
+- **notifications:** add fileds to error interface
+- **nrdb:** Correctly unwrap the graphql context for Query, better testing
+- **nrdb:** Add String() to Epoch* types
+- **nrql_conditions:** fix spelling errors, fix types
+- **nrql_conditions:** proper zero-value marshalling for threshold
+- **nrqldroprules:** Actually return Nrqldroprules client
+- **region:** fix insights key management api url
+- **region:** make ConfigRegion case-insensitive
+- **region:** gracefully fall back to default region
+- **region:** Better URL building
+- **region_constants:** corrected insightsBaseURL for EU
+- **release:** use our changelog for release notes
+- **serialization:** Fix nanosecond handling, set tz UTC, add EpochTime.String()
+- **serialization:** set tz UTC on MarshalJSON
+- **serialization:** EpochTime handling of Unix timestamp with milliseconds
+- **servicelevel:** Update code gen strategy
+- **servicelevel:** avoid import cycle
+- **servicelevel:** Initialize service level API with config
+- **synthetics:** use *bool type to avoid removing false values
+- **synthetics:** add paging to monitors resource
+- **typegen:** do not attempt to unmarshal null data
+- **typegen:** Avoid nil pointer on custom UnmarshalJSON
+- **typegen:** Remove some overrides so types are generated without modifications
+- **typegen:** default to resolving nested types
+- **typegen:** ensure handling of slice/LIST types
+- **typegen:** Avoid nil pointer on unmarshall
+- **typegen:** ensure we also generate non-input fields
+- **workloads:** Removing deprecated field `name` from `entitySearchQuery`
+- **workloads:** map non-nullable fields to structs correctly
+- **workloads:** use epoch time for EntitySearchQuery.CreatedAt
+- **workloads:** export the workloads API via the newrelic package
+- **workloads:** fix some bugs in the workloads implementation
+- **workloads:** remove nullable struct fields unless necessary
 - **workloads:** fix query type for entity guid
 
-<a name="v0.23.2"></a>
-## [v0.23.2] - 2020-05-11
-### Bug Fixes
-- **alerts:** Updating incorrect AlertEvents params
-- **region:** gracefully fall back to default region
-
-<a name="v0.23.1"></a>
-## [v0.23.1] - 2020-05-04
-### Bug Fixes
-- **alerts:** Alerts paging was incorrectly generating URLs
-
-<a name="v0.23.0"></a>
-## [v0.23.0] - 2020-05-01
-### Bug Fixes
-- **build:** Github actions `make lint` for commit messages need full history
-- **workloads:** Removing deprecated field `name` from `entitySearchQuery`
-
 ### Documentation Updates
-- **typegen:** Add a README for typegen
-
-### Features
-- **events:** add alert events
-
-### Refactor
-- **build:** Split up github actions a bit
-- **typegen:** Split/refactor much of typegen internals
-
-<a name="v0.22.0"></a>
-## [v0.22.0] - 2020-04-23
-### Bug Fixes
-- **alerts:** include "equal" operator for NRQL condition terms
-
-### Features
-- **dashboards:** add grid_column_count field
-
-### Refactor
-- **workloads:** query with GUID per upstream API change
-
-<a name="v0.21.1"></a>
-## [v0.21.1] - 2020-04-15
-### Bug Fixes
-- **alerts:** return a NotFound error when policies are not found in NerdGraph
-
-### Refactor
-- **workloads:** remove deprecated fields
-
-<a name="v0.21.0"></a>
-## [v0.21.0] - 2020-04-06
-### Bug Fixes
-- **build:** goreleaser now supports libraries, remove hack in config, skip build
-
-### Features
-- **typegen:** handle scalar types
-
-### Refactor
-- **alerts:** Update go:generate for types signature
-- **newrelic:** Continue to fail, do not log invalid region
-- **region:** Better error types/more tests
-- **region:** Split parsing / fetching of region data so Parse can be reused
-- **typegen:** Filter internal context off of generated descriptions if present
-- **typegen:** Break out some structs
-- **typegen:** Move all schema generation stuff into typegen
-
-<a name="v0.20.1"></a>
-## [v0.20.1] - 2020-04-01
-### Bug Fixes
-- **alerts:** use pointers for the result struct
-
-### Refactor
-- **nerdstorage:** check scope ID for zero values during nerdstorage operations
-
-<a name="v0.20.0"></a>
-## [v0.20.0] - 2020-03-31
-### Bug Fixes
-- **alerts:** include missing types to generate
-- **nrql_conditions:** fix spelling errors, fix types
-- **region:** Better URL building
-- **typegen:** ensure we also generate non-input fields
-- **typegen:** ensure handling of slice/LIST types
-- **typegen:** default to resolving nested types
-
-### Documentation Updates
+- add upgrade instructions and update example usage steps
+- update minimum Go version requirement in development section
+- Update example in readme to compile and run with v0.73.0
+- fill in missing inline documentation
+- update changelog
+- update changelog
+- update changelog
+- update changelog
+- update supported Go information and test config
+- update changelog
+- update README.md
+- add badges to README
+- add inline documentation
+- temporarily checking in broken import paths in generated markdown docs
+- add alerts package docs
+- update readme example
+- update example
+- update community support information
+- document some methods
 - **README:** Update example in README, closes [#225](https://github.com/newrelic/newrelic-client-go/issues/225)
-- **nerdstorage:** add examples
-
-### Features
-- **alerts:** implement NerdGraph policy search
-- **internal:** add additional error context to graphQLError
-- **nerdstorage:** add a nerdstorage package and resource
-- **region:** Add a region package
-- **typegen:** handle types of Kind OBJECT
-
-### Refactor
-- **alerts:** fix alerts tests
-- **alerts:** Move FQDN/URL creation into package, out of http client for REST
-- **apm:** Update apm tests
-- **apm:** Move FQDN/URL creation into package, out of http client for REST
-- **config:** Migrate Region to pkg/region
-- **config:** Add new func for config
-- **config:** Remove unused config fields
-- **dashboards:** Update dashboard tests
-- **dashboards:** Move FQDN/URL creation into package, out of http client for REST
-- **entities:** Update entities tests
-- **http:** introduce a request-scoped API for NerdGraph queries
-- **http:** Remove assumption that we are talking to a REST endpoint
-- **http:** Move HTTP client to use new region format
-- **nerdgraph:** Update nerdgraph tests
-- **plugins:** Update plugin tests
-- **plugins:** Move FQDN/URL creation into package, out of http client for REST
-- **region:** Change access to config.Region to ensure it exists
-- **synthetics:** Update synthetics tests
-- **synthetics:** Move FQDN/URL creation into package, out of http client for REST
-- **typegen:** Convert to using go generate to run typegen, `make generate` to test
-- **workloads:** Update workloads tests
-
-<a name="v0.19.0"></a>
-## [v0.19.0] - 2020-03-25
-### Bug Fixes
-- **alerts:** policy update response test
-- **workloads:** remove nullable struct fields unless necessary
-
-### Features
-- **alerts:** add search method for NRQL conditions
-- **alerts:** add get method for query NRQL conditions
-- **alerts:** add update methods for baseline and static NRQL conditions
-- **alerts:** add create methods for baseline and static NRQL conditions
-- **nerdgraph:** begin generating structs from schema
-
-### Refactor
-- **alerts:** consolidate Nrql condition structs for better reusability
-
-<a name="v0.18.0"></a>
-## [v0.18.0] - 2020-03-20
-### Bug Fixes
-- **workloads:** fix some bugs in the workloads implementation
-- **workloads:** export the workloads API via the newrelic package
-
-### Features
-- **alerts:** implement muting rules
-
-<a name="v0.17.1"></a>
-## [v0.17.1] - 2020-03-18
-### Bug Fixes
-- **alerts:** add custom unmarshaling for ConditionTerm
-- **workloads:** use epoch time for EntitySearchQuery.CreatedAt
-
-<a name="v0.17.0"></a>
-## [v0.17.0] - 2020-03-17
-### Bug Fixes
-- **workloads:** map non-nullable fields to structs correctly
-
-### Documentation Updates
 - **alerts:** add package-level documentation and examples
 - **apm:** add package-level documentation and examples
+- **build:** Update README for commit message format
+- **changelog:** Add auto-generation of CHANGELOG from git comments via `make changelog`
 - **client:** add synopses for all packages
+- **cloud:** add cloud account resource example
 - **config:** add package-level documentation
 - **dashboards:** add package-level documentation and examples
 - **entities:** add package-level documentation and examples
 - **errors:** update package-level documentation
 - **infrastructure:** add package-level documentation
 - **nerdgraph:** add package-level documentation and examples
+- **nerdstorage:** add examples
 - **newrelic:** add package-level documentation and examples
 - **newrelic:** use single-letter vars for receivers
+- **newrelic:** update API key configuration documentation
 - **plugins:** add package-level documentation and examples
 - **synthetics:** add package-level documentation and examples
+- **typegen:** Add a README for typegen
 
 ### Features
-- **alerts:** implement graphql policy methods
-- **workloads:** add update operation, rework integration test scenario
-- **workloads:** add delete and duplicate mutations
-- **workloads:** add a workload create operation
-- **workloads:** add a workloads resource, list and get methods
-
-### Refactor
-- **alerts:** Fix lint issue
-- **alerts:** add types for fields with known values
-- **apm:** Move Application REST implementation, use interface
-- **dashboards:** add types for fields with known values
-- **http:** Move NewRequest, have it follow New* func format
-- **http:** Move graphql code out to file
-- **http:** Make all fields private, add some setters/getters, more tests
-- **http:** Consolidate GraphQL client, rename to http.Client
-- **http:** Move GraphQL into http.NewRelicClient as Query()
-
-<a name="v0.16.0"></a>
-## [v0.16.0] - 2020-03-11
-### Bug Fixes
-- **build:** Force pull tags after each checkout
-
-### Documentation Updates
-- update community support information
-
-### Features
-- **entities:** Add some more details from BrowserApplicationEntity
-- **entities:** Return more data on ApmApplicationEntity, and be consistent in what we return between fetch and search
-
-### Refactor
-- **entities:** Change Entity.Type type... Add more to the ENUMs
-
-<a name="v0.15.0"></a>
-## [v0.15.0] - 2020-03-09
-### Bug Fixes
-- **apm:** remove unused field
-- **build:** Remove working dir config for CircleCI
-- **http:** allow overriding of service name
-
-### Refactor
-- **alert_conditions:** remove transient PolicyID from struct for consistency with API response
-- **alerts:** use consistent types for incident timestamp fields
-- **build:** Make the build system consistent with other projects
-- **nrql_conditions:** remove transient PolicyID from struct for consistency with API response
-- **plugins_conditions:** remove transient PolicyID from struct for consistency with API response
-
-<a name="v0.14.0"></a>
-## [v0.14.0] - 2020-03-05
-### Features
-- **newrelic:** add types for fields with well known values
-
-<a name="v0.13.0"></a>
-## [v0.13.0] - 2020-03-03
-### Bug Fixes
-- **entities:** include applicationId for ApmApplicationEntity results
-- **entities:** Make ApplicationID optional in results, omit if not returned by the API
-- **http:** create a new errorValue for every request
-
-### Refactor
-- **apm:** refactor deployments resource to use new auth strategy
-- **http:** refactor client to a request-scoped config context
-
-<a name="v0.12.0"></a>
-## [v0.12.0] - 2020-02-28
-### Bug Fixes
-- **docs:** Fix the release badge
-
-### Features
-- **nerdgraph:** implement ability to make raw graphql query
-
-### Refactor
-- **alerts:** Move structs into implementing files
-- **apm:** Move structs into implementing files
-- **config:** BREAKING CHANGE: Change environment vars and rename APIKey to AdminApiKey
-- **dashboards:** Move structs into implementing files
-- **entities:** Move structs into implementing files
-- **synthetics:** Move structs into implementing files
-
-<a name="v0.11.0"></a>
-## [v0.11.0] - 2020-02-27
-### Features
-- **http:** allow personal API keys to be used for alerts and APM resources
-
-### Refactor
-- **http:** refactor authentication out of http client
-
-<a name="v0.10.1"></a>
-## [v0.10.1] - 2020-02-20
-### Bug Fixes
-- **entities:** tags filter needs to use type TagValue in graphql query
-- **newrelic:** Add option to set ServiceName in Config
-
-<a name="v0.10.0"></a>
-## [v0.10.0] - 2020-02-19
-### Features
-- **ci:** add release make target
-- **ci:** the beginnings of some release automation
-- **synthetics:** add secure credentials resource
-- **synthetics:** implement label monitor support
-
-<a name="v0.9.0"></a>
-## [v0.9.0] - 2020-02-05
-### Bug Fixes
-- allow string representations of JSON for alert channel webhook and payload
-- **http:** Clear client responses between pages
-
-### Features
-- **alerts:** Implement multi-location synthetics conditions
-- **http:** add trace logging with additional request info
-
-<a name="v0.8.0"></a>
-## [v0.8.0] - 2020-01-29
-### Bug Fixes
-- **alerts:** ensure multiple channels can be added via /alerts_policy_channel.json endpoint ([#114](https://github.com/newrelic/newrelic-client-go/issues/114))
-
-### Features
-- **apm:** Add support application metric names and data
-
-<a name="v0.7.1"></a>
-## [v0.7.1] - 2020-01-24
-### Bug Fixes
-- **alerts:** handle more complex JSON structures in headers and/or payload
-- **logging:** use global methods for the default logger rather than a logrus instance
-
-### Refactor
-- **entities:** rename SearchEntities params struct per convention
-- **newrelic:** remove reference to pointer for http transport config
-
-<a name="v0.7.0"></a>
-## [v0.7.0] - 2020-01-23
-### Features
-- **newrelic:** add ConfigOptions for logging
-- **newrelic:** add the ability to configure base URLs per API
-
-### Refactor
-- **newrelic:** incorporate code review feedback
-
-<a name="v0.6.0"></a>
-## [v0.6.0] - 2020-01-22
-### Features
-- **alerts:** add GetSyntheticsCondition method ([#105](https://github.com/newrelic/newrelic-client-go/issues/105))
-
-<a name="v0.5.1"></a>
-## [v0.5.1] - 2020-01-21
-### Bug Fixes
-- **alerts:** custom unmarshal of channel configuration Headers and Payload fields ([#102](https://github.com/newrelic/newrelic-client-go/issues/102))
-
-<a name="v0.5.0"></a>
-## [v0.5.0] - 2020-01-16
-### Documentation Updates
-- **newrelic:** update API key configuration documentation
-
-### Refactor
-- **newrelic:** validate that at least one API key is provided
-
-<a name="v0.4.0"></a>
-## [v0.4.0] - 2020-01-15
-### Bug Fixes
-- retry HTTP requests on 429 status codes
-
-### Features
-- **entities:** add entities search and entity tagging
-
-### Refactor
-- update test helpers to use new mock server, consistent patterns in tests
-
-<a name="v0.3.0"></a>
-## [v0.3.0] - 2020-01-13
-### Bug Fixes
-- make use of ErrorNotFound type for Get methods that are based on List methods
-- add policy ID to alert condition
-
-### Documentation Updates
-- update example
-- **build:** Update README for commit message format
-- **changelog:** Add auto-generation of CHANGELOG from git comments via `make changelog`
-
-### Features
+- add GetKeyTransaction
+- add application filtering for ListApplications
+- add ListMonitors method for Synthetics monitors
+- maximize page size for ListMonitors
+- add New Relic environment enum
+- add catchall newrelic package
+- add infra namespace
 - add top-level logging package for convenience
 - add option for JSON logging and fail gracefully when log level cannot be parsed
+- add ListAlertConditions for infrastructure
+- add version.go per auto-versioning docs
+- add new dependency-free client implementation
 - introduce logging
+- create remaining CRUD methods for application resource
 - update monitor scripts with return design pattern, update tests
-
-### Refactor
-- update alerts incidents to follow return design pattern, parallelize and use assert lib in alert incidents tests
-- update ListDashboards to return array of pointers, update Dashboard test to use assert
-- update ListApplications to return array of pointers, update tests to use assert
-- update alert channels to return array of pointers, update tests to use assert
-- update synthetics conditions to return array of pointers
-- use require lib for dashboards integration tests
-- refactor to package-based types files
-- remove config pointer references
-- remove unnecessary else
-- create a logger instance per package
-- move logging config code into logging package
-- use centralized test helpers and remove old ones
-- rescope vars for integration tests to avoid variable name conflicts
-- remove redundant 'alert' from file names
-- remove redundant 'Alert' from naming convention
-- update monitors to use return design pattern where applicable, update tests
-- incorporate code review feedback
-- consistent use of pointers for &reqBody structs
-- **alerts:** Spike example of changes to the mock setup
-- **alerts:** Update mock server format, continue to have pkg helper
-- **config:** Change Region to a string, then parse with region package
-- **newrelic:** Extract config setting to opts ... format
-- **region:** Move region out of config into package, add Parse(string)
-
-<a name="v0.2.0"></a>
-## [v0.2.0] - 2020-01-08
-### Documentation Updates
-- update readme example
-
-<a name="v0.1.0"></a>
-## v0.1.0 - 2020-01-07
-### Bug Fixes
-- rename variables to fix redeclared error
-- update unit tests to use new method sigs
-- fix monitor ID type and GetMonitor URL
-- http client needs to handle other 'success' response status codes such as 201
-- add godoc as a dep, and a warning about GOPATH and godoc
-- fix paging bug for v2 API
-- **lint:** formatting fixes for linter
-
-### Documentation Updates
-- add alerts package docs
-- temporarily checking in broken import paths in generated markdown docs
-- add inline documentation
-- add badges to README
-- fill in missing inline documentation
-- document some methods
-
-### Features
+- add entitySearch with query parameter
+- alerts package
+- added testing scripts to test synthetic monitors
+- Generate the client code for synthetics private locations
+- added synthetics monitoring
 - add DeletePluginCondition
+- add synthetics secure credentials GraphQL API
+- Expose EntityGUID on NRQL Conditions when using NerdGraph.
+- Expose EntityGUID on NRQL Conditions.
 - add CreatePluginCondition
 - add UpdatePluginCondition
 - add GetPluginCondition
+- add ListAlertPolicies method
+- add GetAlertPolicy method
+- add CreateAlertPolicy method
+- get TestListApplications passing
+- add DeleteAlertPolicy method
+- use improved error handling for muting rules
+- add dashboards
 - add ListPluginsConditions
+- add CreateMonitor
+- add UpdateMonitor
+- Provide additional context in GraphQL errors for Alerts operations
+- add DeleteMonitor
+- add installstatus schema for install-events-service
+- add CreateAlertChannel, ListAlertChannels, DeleteAlertChannel
+- enable APIKS auth for alerts and plugins packages
+- add GetAlertChannel method
 - encode monitor script text
+- add synthetics alert conditions
+- add context-aware methods
+- add UpdateAlertPolicy
 - add ability to use 'detailed' query param in ListPlugins method
 - add GetPlugin
+- add synthetics alert conditions
+- add alert policy channels
+- add DeleteAlertPolicyChannel, update unit tests, add integration test (might need to remove this)
+- add MonitorScript
+- add MonitorScripts
+- add InfrastructureConditions
 - add ListPlugins
+- get infra condition integration tests passing
+- add ListAlertConditions
+- add GetAlertCondition
+- add CreateAlertCondition
+- add DeleteAlertCondition
+- add CreateLabel
 - publicly expose error types
-- finish components endpoints
 - add Components
+- add ListNrqlAlertConditions
+- add GetNrqlAlertCondition
+- add CreateNrqlAlertCondition
+- add UpdateNrqlAlertCondition
+- add DeleteNrqlAlertCondition
+- centralize apm test helpers
+- add ListDeployments
+- add CreateDeployment
+- add DeleteDeployment
+- remove admin API key as an authentication mechanism
+- add ListLabels, add GetLabel
 - add internal utils package, move IntArrayToString() util to new home
+- add a custom event resource
 - add integration tests for key transactions
 - add query param filters for ListKeyTransactions
-- add GetKeyTransaction
-- add ListKeyTransactions
 - add DeleteLabel
-- add CreateLabel
-- add ListLabels, add GetLabel
-- add DeleteDeployment
-- add CreateDeployment
-- add ListDeployments
-- centralize apm test helpers
-- add DeleteNrqlAlertCondition
-- add UpdateNrqlAlertCondition
-- add CreateNrqlAlertCondition
-- add GetNrqlAlertCondition
-- add ListNrqlAlertConditions
-- add UpdateAlertPolicy
-- add DeleteAlertCondition
-- add CreateAlertCondition
-- add GetAlertCondition
-- add ListAlertConditions
-- get infra condition integration tests passing
-- add InfrastructureConditions
-- add MonitorScripts
-- add MonitorScript
-- add DeleteAlertPolicyChannel, update unit tests, add integration test (might need to remove this)
-- add alert policy channels
-- add synthetics alert conditions
-- add synthetics alert conditions
-- add GetAlertChannel method
-- add CreateAlertChannel, ListAlertChannels, DeleteAlertChannel
-- add DeleteMonitor
-- add UpdateMonitor
-- add CreateMonitor
-- add dashboards
-- add DeleteAlertPolicy method
+- add ListKeyTransactions
 - add UpdateAlertPolicy method
-- add CreateAlertPolicy method
-- add GetAlertPolicy method
-- add ListAlertPolicies method
-- alerts package
-- create remaining CRUD methods for application resource
-- add new dependency-free client implementation
-- add version.go per auto-versioning docs
-- add ListAlertConditions for infrastructure
-- add infra namespace
-- add catchall newrelic package
-- add New Relic environment enum
-- maximize page size for ListMonitors
-- add ListMonitors method for Synthetics monitors
-- add application filtering for ListApplications
-- get TestListApplications passing
+- finish components endpoints
+- **Error:** Add InvalidInput error
+- **accounts:** add an accounts resource
+- **accounts:** Add AccountReference
+- **alerts:** Adds 3 term threshold operators for NRQL conditions
+- **alerts:** implement muting rules
+- **alerts:** enable personal api key auth for infra conditions
+- **alerts:** add description field to infra alert condition
+- **alerts:** allow passing context to alerts methods
+- **alerts:** implement graphql policy methods
+- **alerts:** add new fields 'expiration' and 'signal' to nrql_conditions
+- **alerts:** Add muting rule schedule fields
+- **alerts:** add create methods for baseline and static NRQL conditions
+- **alerts:** add DeleteNrqlConditionMutation as a proxy to DeleteConditionMutation
+- **alerts:** add UpdateNrqlConditionOutlierMutation method for updating outlier NRQL alert conditions
+- **alerts:** add CreateNrqlConditionOutlierMutation method for creating outlier NRQL alert conditions
+- **alerts:** add update methods for baseline and static NRQL conditions
+- **alerts:** add get method for query NRQL conditions
+- **alerts:** add nerdgraph-based alert condition deletion
+- **alerts:** add GetSyntheticsCondition method ([#105](https://github.com/newrelic/newrelic-client-go/issues/105))
+- **alerts:** Implement multi-location synthetics conditions
+- **alerts:** add search method for NRQL conditions
+- **alerts:** implement NerdGraph policy search
+- **alerts:** adding id to alertsMutingRulesQuery
+- **alerts:** streaming triggers for nrql alerts
+- **apiaccess:** add context-aware methods for insights keys
+- **apiaccess:** add methods for managing insights insert keys
+- **apiaccess:** add search api access keys method
+- **apiaccesskeys:** add new api access keys package
+- **apm:** Add support application metric names and data
+- **apm:** allow passing context to apm methods
+- **apm:** allow passing context to applicationsREST funcs
+- **application_instances:** add an application instance resource
+- **auth:** Add X-Account-ID header if value exists in request context
+- **build:** upgrade to Go 1.18
+- **build:** compile on Go 1.17.x
+- **channels:** add notifications channels API using tutone tool
+- **channels:** remove duplicate declartion
+- **channels:** remove duplicate code and fix tests
+- **ci:** the beginnings of some release automation
+- **ci:** add release make target
+- **cloud:** add query to get a single linked account
+- **cloud:** add cloud domain to client API
+- **cloud:** include initial cloud client support
+- **config:** add a local region
+- **dashboards:** add grid_column_count field
+- **dashboards:** added RawConfiguration structure
+- **dashboards:** Auto-generate GraphQL code for dashboards (early access)
+- **dashboards:** Add GetDashboardEntity()
+- **dashboards:** remove deprecated and disabled legacy dashboards REST API methods
+- **dashboards:** add linkedEntities to getDashboardEntityQuery
+- **destinations:** fix tests
+- **destinations:** fix tests
+- **edge:** add trace observer resource
+- **entities:** Add some more details from BrowserApplicationEntity
+- **entities:** Code-gen tag mutations
+- **entities:** add entities search and entity tagging
+- **entities:** Return more data on ApmApplicationEntity, and be consistent in what we return between fetch and search
+- **entities:** add new entity types
+- **entities:** Generate Getter helpers for EntityInterfaces
+- **entities:** surface underlying application IDs for mobile application entities
+- **entities:** Add more methods to Entity(Outline)Interface
+- **entities:** Mostly code generated Entities queries (entities/entity/entitySearch)
+- **entity:** Add EntityInterface.GetTags()
+- **errors:** handle 402 payment required HTTP response scenario
+- **events:** add alert events
+- **events:** add context-aware method to event creation method
+- **events:** Add license key authorization for the Event API
+- **events:** Batch event insertion
+- **eventstometrics:** add EventsToMetrics
+- **graphql:** capture validation error output from response
+- **http:** Enable compression handling for requests, consolidate POST methods
+- **http:** retry on nerdgraph server timeout
+- **http:** add trace logging with additional request info
+- **http:** allow personal API keys to be used for alerts and APM resources
+- **http:** Add retry condition for graphql TOO_MANY_REQUESTS error response on json
+- **install:** add DETECTED status via code gen
+- **installevents:** start package to track install-events-service
+- **installevents:** add recipe event metadata field, update mutation via tutone
+- **internal:** add additional error context to graphQLError
+- **logs:** support insert key
+- **logs:** Implement Log API
+- **logs:** implement log batch mode
+- **logs:** implement log batch mode
+- **nerdgraph:** implement ability to make raw graphql query
+- **nerdgraph:** allow custom unmarshal structs for queries
+- **nerdgraph:** begin generating structs from schema
+- **nerdgraph:** allow passing context to underlying client
+- **nerdstorage:** add a nerdstorage package and resource
+- **newrelic:** add ConfigOptions for logging
+- **newrelic:** add the ability to configure base URLs per API
+- **newrelic:** add types for fields with well known values
+- **notifications:** add notifications destinations api calls
+- **nrdb:** allow passing context to nrdb query methods
+- **nrdb:** Add nrdb.Query(acct, NRQL) via NerdGraph
+- **nrdb:** Fetch nrql query history
+- **nrql alert condition:** add signal.aggregation_window
+- **nrql_conditions:** add optional SlideBy field to signal
+- **nrql_conditions:** add violation_time_limit_seconds
+- **nrqldroprules:** Implement NrqlDropRules
+- **region:** Add Insights insert API URLs
+- **region:** Add a region package
+- **serialization:** Add Unix() command to EpochTime
+- **servicelevel:** generate servicelevel API
+- **servicelevel:** update code gen strategy
+- **synthetics:** change resources to use personal api keys
+- **synthetics:** generate code for queries synthetics.script and synthetics.steps
+- **synthetics:** add secure credentials resource
+- **synthetics:** implement label monitor support
+- **synthetics:** add a monitor locations resource
+- **tags:** added method to get only mutable tags
+- **typegen:** handle scalar types
+- **typegen:** handle types of Kind OBJECT
+- **typegen:** Add imports to typegen
+- **users:** Add users package, and replace references in existing packages
+- **users:** Add users package
+- **workflows:** add workflows API
+- **workflows:** fix unit tests + add readme
+- **workflows:** fix intgration tests
+- **workflows:** fix lint
+- **workflows:** add workflows API - fix tests
+- **workloads:** add a workloads resource, list and get methods
+- **workloads:** add a workload create operation
+- **workloads:** add update operation, rework integration test scenario
+- **workloads:** add delete and duplicate mutations
 
 ### Refactor
-- updates per code review
-- use proper noun Plugins in naming convention
-- update key txns to use new query string parsing mechanism
-- simplify integration test scenarios for components
-- move components to the plugins package
-- move query string parsing to an external package
-- represent query params as a struct rather than a map
-- return slices of pointers instead of slices of structs
-- simplify parameter handling logic
-- optimize IntArrayToString() per review, add test cases
-- add integration tests, update unit tests, links should be a pointer for omission
-- Makefile cleanup
-- optimize pushing to array of pointers
-- refactor synthetics conditions to established patterns
-- refactor alerts package to established patterns
-- refactor synthetics package to established patterns
-- update local var names for consistency
-- update Epoch to EpochTime
-- remove redundant 'Alert' from naming convention
-- remove pointer from AlertChannelConfiguration
-- utilize testify assert library, other minor refactors
-- refactor unit tests to use testify assertions
-- add concrete types for field with known possible values
-- use Epoch type for date types instead of int64
-- consolidate request body structs into one alertPolicyRequestBody
-- no pointers for param fields
-- integrate new http client
-- simplify HTTP method signatures
-- add the remaining HTTP methods
-- rename the new client types
-- remove the old resty-based client
-- put new client in place for all resources
-- make ListApplications use the new client
-- move version into its own internal package for now
-- incorporate linter suggestions
-- clean up the configuration API for NewRelicClient
-- restructuring project files
-- extract cross cutting concern for apm resources
+- update test helpers to use new mock server, consistent patterns in tests
+- delete installationeventresult if statement
 - extract paging implementation
+- extract cross cutting concern for apm resources
+- Update all code-gen unmarshals with new typegen template
+- refactor to package-based types files
+- Tutone auto-naming conflict with schema
+- EpochTime as a pointer to allow for null value in JSON unmarshaling
+- restructuring project files
+- clean up the configuration API for NewRelicClient
+- incorporate linter suggestions
+- move version into its own internal package for now
+- make ListApplications use the new client
+- put new client in place for all resources
+- Add omitempty to nullable and input objects for all packages
+- remove the old resty-based client
+- Selective generation on type in Entities, Infrastructure, and NerdStorage
+- DRY up some of the time based items into nrtime
+- move EntityGUID to a common package
+- rename the new client types
 - rename packages for clarity, promote Config to the public package
+- remove unnecessary else
+- add the remaining HTTP methods
+- simplify HTTP method signatures
+- integrate new http client
+- no pointers for param fields
+- consolidate request body structs into one alertPolicyRequestBody
+- use Epoch type for date types instead of int64
+- add concrete types for field with known possible values
+- refactor unit tests to use testify assertions
+- utilize testify assert library, other minor refactors
+- create a logger instance per package
+- remove pointer from AlertChannelConfiguration
+- remove redundant 'Alert' from naming convention
+- update Epoch to EpochTime
+- update local var names for consistency
+- refactor synthetics package to established patterns
+- refactor alerts package to established patterns
+- refactor synthetics conditions to established patterns
+- optimize pushing to array of pointers
+- update monitors to use return design pattern where applicable, update tests
+- move logging config code into logging package
+- add integration tests, update unit tests, links should be a pointer for omission
+- optimize IntArrayToString() per review, add test cases
+- simplify parameter handling logic
+- return slices of pointers instead of slices of structs
+- represent query params as a struct rather than a map
+- move query string parsing to an external package
+- move components to the plugins package
+- simplify integration test scenarios for components
+- use centralized test helpers and remove old ones
+- update key txns to use new query string parsing mechanism
+- use proper noun Plugins in naming convention
+- updates per code review
+- consistent use of pointers for &reqBody structs
+- incorporate code review feedback
+- remove config pointer references
+- update ListDashboards to return array of pointers, update Dashboard test to use assert
+- rescope vars for integration tests to avoid variable name conflicts
+- remove redundant 'alert' from file names
+- update alert channels to return array of pointers, update tests to use assert
+- update synthetics conditions to return array of pointers
+- use require lib for dashboards integration tests
+- update alerts incidents to follow return design pattern, parallelize and use assert lib in alert incidents tests
+- Makefile cleanup
+- remove redundant 'Alert' from naming convention
+- update ListApplications to return array of pointers, update tests to use assert
+- **alert_conditions:** remove transient PolicyID from struct for consistency with API response
+- **alerts:** update NG-based policy and condition IDs to string types
+- **alerts:** consolidate Nrql condition structs for better reusability
+- **alerts:** fix alerts tests
+- **alerts:** Move FQDN/URL creation into package, out of http client for REST
+- **alerts:** Update go:generate for types signature
+- **alerts:** add types for fields with known values
+- **alerts:** update NG-based condition IDs to string type
+- **alerts:** remove omitEmpty from MutingRuleScheduleUpdateInput
+- **alerts:** Spike example of changes to the mock setup
+- **alerts:** Update mock server format, continue to have pkg helper
+- **alerts:** Move structs into implementing files
+- **alerts:** use consistent types for incident timestamp fields
+- **alerts:** Fix lint issue
+- **alerts:** remove widespread change, limit scope to only nrql condition error resp handling
+- **apm:** Move structs into implementing files
+- **apm:** Move FQDN/URL creation into package, out of http client for REST
+- **apm:** refactor deployments resource to use new auth strategy
+- **apm:** Update apm tests
+- **apm:** Move Application REST implementation, use interface
+- **build:** Split up github actions a bit
+- **build:** Make the build system consistent with other projects
+- **cloud:** Cloud auto-generating via tutone
+- **config:** Change Region to a string, then parse with region package
+- **config:** Add new func for config
+- **config:** Remove unused config fields
+- **config:** Migrate Region to pkg/region
+- **config:** BREAKING CHANGE: Change environment vars and rename APIKey to AdminApiKey
+- **dashboards:** Move structs into implementing files
+- **dashboards:** Use nrqlQueries in place of queries
+- **dashboards:** add types for fields with known values
+- **dashboards:** Move FQDN/URL creation into package, out of http client for REST
+- **dashboards:** Update dashboard tests
+- **entities:** change the get functions to not be on ptrs
+- **entities:** DRY up Nrdb from Entities
+- **entities:** Update entities tests
+- **entities:** Move structs into implementing files
+- **entities:** rename SearchEntities params struct per convention
+- **entities:** Change Entity.Type type... Add more to the ENUMs
+- **entities:** Cleanup unused structs in entities
+- **http:** refactor client to a request-scoped config context
+- **http:** Move NewRequest, have it follow New* func format
+- **http:** Move graphql code out to file
+- **http:** Move HTTP client to use new region format
+- **http:** Consolidate GraphQL client, rename to http.Client
+- **http:** introduce a request-scoped API for NerdGraph queries
+- **http:** Move GraphQL into http.NewRelicClient as Query()
+- **http:** refactor authentication out of http client
+- **http:** Make all fields private, add some setters/getters, more tests
+- **http:** Remove assumption that we are talking to a REST endpoint
+- **nerdgraph:** Update nerdgraph tests
+- **nerdstorage:** check scope ID for zero values during nerdstorage operations
+- **newrelic:** validate that at least one API key is provided
+- **newrelic:** Continue to fail, do not log invalid region
+- **newrelic:** incorporate code review feedback
+- **newrelic:** Extract config setting to opts ... format
+- **newrelic:** remove reference to pointer for http transport config
+- **nrql_conditions:** conditionID should be a string for consistency in ng implementation
+- **nrql_conditions:** remove transient PolicyID from struct for consistency with API response
+- **plugins:** Move FQDN/URL creation into package, out of http client for REST
+- **plugins:** Update plugin tests
+- **plugins_conditions:** remove transient PolicyID from struct for consistency with API response
+- **region:** Move region out of config into package, add Parse(string)
+- **region:** Split parsing / fetching of region data so Parse can be reused
+- **region:** Change access to config.Region to ensure it exists
+- **region:** Better error types/more tests
+- **synthetics:** Move structs into implementing files
+- **synthetics:** Update synthetics tests
+- **synthetics:** Move FQDN/URL creation into package, out of http client for REST
+- **testhelpers:** Remove hard-coded TestAccountID
+- **tutone:** Add error wrapping to mutation results
+- **typegen:** Split/refactor much of typegen internals
+- **typegen:** Convert to using go generate to run typegen, `make generate` to test
+- **typegen:** Break out some structs
+- **typegen:** Move all schema generation stuff into typegen
+- **typegen:** Filter internal context off of generated descriptions if present
+- **typegen:** If we override a type to be in another package, properly generate the Unmarshal func call
+- **workloads:** Update workloads tests
+- **workloads:** Generate workload code, deprecate old functions
+- **workloads:** query with GUID per upstream API change
+- **workloads:** remove deprecated fields
 
-[Unreleased]: https://github.com/newrelic/newrelic-client-go/compare/v0.91.1...HEAD
-[v0.91.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.91.0...v0.91.1
-[v0.91.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.90.0...v0.91.0
-[v0.90.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.89.1...v0.90.0
-[v0.89.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.89.0...v0.89.1
-[v0.89.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.88.1...v0.89.0
-[v0.88.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.88.0...v0.88.1
-[v0.88.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.87.1...v0.88.0
-[v0.87.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.87.0...v0.87.1
-[v0.87.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.86.5...v0.87.0
-[v0.86.5]: https://github.com/newrelic/newrelic-client-go/compare/v0.86.4...v0.86.5
-[v0.86.4]: https://github.com/newrelic/newrelic-client-go/compare/v0.86.3...v0.86.4
-[v0.86.3]: https://github.com/newrelic/newrelic-client-go/compare/v0.86.2...v0.86.3
-[v0.86.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.86.1...v0.86.2
-[v0.86.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.86.0...v0.86.1
-[v0.86.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.85.0...v0.86.0
-[v0.85.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.84.0...v0.85.0
-[v0.84.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.83.0...v0.84.0
-[v0.83.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.82.0...v0.83.0
-[v0.82.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.81.0...v0.82.0
-[v0.81.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.80.0...v0.81.0
-[v0.80.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.79.0...v0.80.0
-[v0.79.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.78.0...v0.79.0
-[v0.78.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.77.0...v0.78.0
-[v0.77.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.76.0...v0.77.0
-[v0.76.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.75.0...v0.76.0
-[v0.75.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.74.2...v0.75.0
-[v0.74.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.74.1...v0.74.2
-[v0.74.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.74.0...v0.74.1
-[v0.74.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.73.0...v0.74.0
-[v0.73.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.72.0...v0.73.0
-[v0.72.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.71.0...v0.72.0
-[v0.71.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.70.0...v0.71.0
-[v0.70.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.69.0...v0.70.0
-[v0.69.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.68.3...v0.69.0
-[v0.68.3]: https://github.com/newrelic/newrelic-client-go/compare/v0.68.2...v0.68.3
-[v0.68.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.68.1...v0.68.2
-[v0.68.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.68.0...v0.68.1
-[v0.68.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.67.0...v0.68.0
-[v0.67.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.66.2...v0.67.0
-[v0.66.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.66.1...v0.66.2
-[v0.66.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.66.0...v0.66.1
-[v0.66.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.65.0...v0.66.0
-[v0.65.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.64.1...v0.65.0
-[v0.64.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.64.0...v0.64.1
-[v0.64.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.63.5...v0.64.0
-[v0.63.5]: https://github.com/newrelic/newrelic-client-go/compare/v0.63.4...v0.63.5
-[v0.63.4]: https://github.com/newrelic/newrelic-client-go/compare/v0.63.3...v0.63.4
-[v0.63.3]: https://github.com/newrelic/newrelic-client-go/compare/v0.63.2...v0.63.3
-[v0.63.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.63.1...v0.63.2
-[v0.63.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.63.0...v0.63.1
-[v0.63.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.62.1...v0.63.0
-[v0.62.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.62.0...v0.62.1
-[v0.62.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.61.4...v0.62.0
-[v0.61.4]: https://github.com/newrelic/newrelic-client-go/compare/v0.61.3...v0.61.4
-[v0.61.3]: https://github.com/newrelic/newrelic-client-go/compare/v0.61.2...v0.61.3
-[v0.61.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.61.1...v0.61.2
-[v0.61.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.61.0...v0.61.1
-[v0.61.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.60.2...v0.61.0
-[v0.60.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.60.1...v0.60.2
-[v0.60.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.60.0...v0.60.1
-[v0.60.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.59.4...v0.60.0
-[v0.59.4]: https://github.com/newrelic/newrelic-client-go/compare/v0.59.3...v0.59.4
-[v0.59.3]: https://github.com/newrelic/newrelic-client-go/compare/v0.59.2...v0.59.3
-[v0.59.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.59.1...v0.59.2
-[v0.59.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.59.0...v0.59.1
-[v0.59.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.58.5...v0.59.0
-[v0.58.5]: https://github.com/newrelic/newrelic-client-go/compare/v0.58.4...v0.58.5
-[v0.58.4]: https://github.com/newrelic/newrelic-client-go/compare/v0.58.3...v0.58.4
-[v0.58.3]: https://github.com/newrelic/newrelic-client-go/compare/v0.58.2...v0.58.3
-[v0.58.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.58.1...v0.58.2
-[v0.58.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.58.0...v0.58.1
-[v0.58.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.57.2...v0.58.0
-[v0.57.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.57.1...v0.57.2
-[v0.57.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.57.0...v0.57.1
-[v0.57.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.56.2...v0.57.0
-[v0.56.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.56.1...v0.56.2
-[v0.56.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.56.0...v0.56.1
-[v0.56.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.55.8...v0.56.0
-[v0.55.8]: https://github.com/newrelic/newrelic-client-go/compare/v0.55.7...v0.55.8
-[v0.55.7]: https://github.com/newrelic/newrelic-client-go/compare/v0.55.6...v0.55.7
-[v0.55.6]: https://github.com/newrelic/newrelic-client-go/compare/v0.55.5...v0.55.6
-[v0.55.5]: https://github.com/newrelic/newrelic-client-go/compare/v0.55.4...v0.55.5
-[v0.55.4]: https://github.com/newrelic/newrelic-client-go/compare/v0.55.3...v0.55.4
-[v0.55.3]: https://github.com/newrelic/newrelic-client-go/compare/v0.55.2...v0.55.3
-[v0.55.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.55.1...v0.55.2
-[v0.55.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.55.0...v0.55.1
-[v0.55.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.54.1...v0.55.0
-[v0.54.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.54.0...v0.54.1
-[v0.54.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.53.0...v0.54.0
-[v0.53.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.52.0...v0.53.0
-[v0.52.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.51.0...v0.52.0
-[v0.51.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.50.0...v0.51.0
-[v0.50.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.49.0...v0.50.0
-[v0.49.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.48.1...v0.49.0
-[v0.48.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.48.0...v0.48.1
-[v0.48.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.47.3...v0.48.0
-[v0.47.3]: https://github.com/newrelic/newrelic-client-go/compare/v0.47.2...v0.47.3
-[v0.47.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.47.1...v0.47.2
-[v0.47.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.47.0...v0.47.1
-[v0.47.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.46.0...v0.47.0
-[v0.46.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.45.0...v0.46.0
-[v0.45.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.44.0...v0.45.0
-[v0.44.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.43.0...v0.44.0
-[v0.43.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.42.1...v0.43.0
-[v0.42.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.42.0...v0.42.1
-[v0.42.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.41.2...v0.42.0
-[v0.41.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.41.1...v0.41.2
-[v0.41.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.41.0...v0.41.1
-[v0.41.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.40.0...v0.41.0
-[v0.40.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.39.0...v0.40.0
-[v0.39.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.38.0...v0.39.0
-[v0.38.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.37.0...v0.38.0
-[v0.37.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.36.0...v0.37.0
-[v0.36.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.35.1...v0.36.0
-[v0.35.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.35.0...v0.35.1
-[v0.35.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.34.0...v0.35.0
-[v0.34.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.33.2...v0.34.0
-[v0.33.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.33.1...v0.33.2
-[v0.33.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.33.0...v0.33.1
-[v0.33.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.32.1...v0.33.0
-[v0.32.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.32.0...v0.32.1
-[v0.32.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.31.3...v0.32.0
-[v0.31.3]: https://github.com/newrelic/newrelic-client-go/compare/v0.31.2...v0.31.3
-[v0.31.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.31.1...v0.31.2
-[v0.31.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.31.0...v0.31.1
-[v0.31.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.30.2...v0.31.0
-[v0.30.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.30.1...v0.30.2
-[v0.30.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.30.0...v0.30.1
-[v0.30.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.29.1...v0.30.0
-[v0.29.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.29.0...v0.29.1
-[v0.29.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.28.1...v0.29.0
-[v0.28.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.28.0...v0.28.1
-[v0.28.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.27.1...v0.28.0
-[v0.27.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.27.0...v0.27.1
-[v0.27.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.26.0...v0.27.0
-[v0.26.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.25.1...v0.26.0
-[v0.25.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.25.0...v0.25.1
-[v0.25.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.24.1...v0.25.0
-[v0.24.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.24.0...v0.24.1
-[v0.24.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.23.4...v0.24.0
-[v0.23.4]: https://github.com/newrelic/newrelic-client-go/compare/v0.23.3...v0.23.4
-[v0.23.3]: https://github.com/newrelic/newrelic-client-go/compare/v0.23.2...v0.23.3
-[v0.23.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.23.1...v0.23.2
-[v0.23.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.23.0...v0.23.1
-[v0.23.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.22.0...v0.23.0
-[v0.22.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.21.1...v0.22.0
-[v0.21.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.21.0...v0.21.1
-[v0.21.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.20.1...v0.21.0
-[v0.20.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.20.0...v0.20.1
-[v0.20.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.19.0...v0.20.0
-[v0.19.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.18.0...v0.19.0
-[v0.18.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.17.1...v0.18.0
-[v0.17.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.17.0...v0.17.1
-[v0.17.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.16.0...v0.17.0
-[v0.16.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.15.0...v0.16.0
-[v0.15.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.14.0...v0.15.0
-[v0.14.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.13.0...v0.14.0
-[v0.13.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.12.0...v0.13.0
-[v0.12.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.11.0...v0.12.0
-[v0.11.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.10.1...v0.11.0
-[v0.10.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.10.0...v0.10.1
-[v0.10.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.9.0...v0.10.0
-[v0.9.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.8.0...v0.9.0
-[v0.8.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.7.1...v0.8.0
-[v0.7.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.7.0...v0.7.1
-[v0.7.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.6.0...v0.7.0
-[v0.6.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.5.1...v0.6.0
-[v0.5.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.5.0...v0.5.1
-[v0.5.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.4.0...v0.5.0
-[v0.4.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.3.0...v0.4.0
-[v0.3.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.2.0...v0.3.0
-[v0.2.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.1.0...v0.2.0
+[Unreleased]: https://github.com/newrelic/newrelic-client-go/compare/v1.0.0...HEAD
