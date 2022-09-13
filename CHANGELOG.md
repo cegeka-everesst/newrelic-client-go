@@ -1,3 +1,8 @@
+<a name="v1.0.1"></a>
+## [v1.0.1] - 2022-09-13
+### Bug Fixes
+- set correct module name
+
 <a name="v1.0.0"></a>
 ## v1.0.0 - 2022-09-13
 ### Bug Fixes
@@ -576,4 +581,5 @@
 - **workloads:** query with GUID per upstream API change
 - **workloads:** remove deprecated fields
 
-[Unreleased]: https://github.com/newrelic/newrelic-client-go/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/newrelic/newrelic-client-go/compare/v1.0.1...HEAD
+[v1.0.1]: https://github.com/newrelic/newrelic-client-go/compare/v1.0.0...v1.0.1
