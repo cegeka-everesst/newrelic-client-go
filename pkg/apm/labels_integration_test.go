@@ -9,7 +9,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	nr "github.com/newrelic/newrelic-client-go/pkg/testhelpers"
+	nr "github.com/cegeka-everesst/newrelic-client-go/pkg/testhelpers"
 )
 
 func TestIntegrationLabels(t *testing.T) {

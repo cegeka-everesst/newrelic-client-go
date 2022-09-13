@@ -2,9 +2,9 @@
 package nrqldroprules
 
 import (
-	"github.com/newrelic/newrelic-client-go/internal/http"
-	"github.com/newrelic/newrelic-client-go/pkg/config"
-	"github.com/newrelic/newrelic-client-go/pkg/logging"
+	"github.com/cegeka-everesst/newrelic-client-go/internal/http"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/config"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/logging"
 )
 
 // NrqlDropRules is used to interact with New Relic accounts.

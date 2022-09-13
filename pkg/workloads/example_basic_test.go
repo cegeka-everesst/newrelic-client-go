@@ -8,8 +8,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/newrelic/newrelic-client-go/pkg/common"
-	"github.com/newrelic/newrelic-client-go/pkg/config"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/common"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/config"
 )
 
 func Example_basic() {

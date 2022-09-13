@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/newrelic/newrelic-client-go/pkg/nrtime"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/nrtime"
 )
 
 // ChartFormatType - Represents all the format types available for static charts.

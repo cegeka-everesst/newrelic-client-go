@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/newrelic/newrelic-client-go/pkg/accounts"
-	"github.com/newrelic/newrelic-client-go/pkg/common"
-	"github.com/newrelic/newrelic-client-go/pkg/nrtime"
-	"github.com/newrelic/newrelic-client-go/pkg/users"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/accounts"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/common"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/nrtime"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/users"
 )
 
 // WorkloadGroupRemainingEntitiesRuleBy - Indicates by which field the remaining entities rule should be grouped.

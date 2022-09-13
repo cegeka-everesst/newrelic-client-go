@@ -5,7 +5,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/newrelic/newrelic-client-go/pkg/common"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/common"
 )
 
 // Tag represents a New Relic One entity tag.

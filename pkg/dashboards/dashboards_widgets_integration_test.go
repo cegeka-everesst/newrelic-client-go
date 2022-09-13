@@ -9,8 +9,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/newrelic/newrelic-client-go/pkg/entities"
-	mock "github.com/newrelic/newrelic-client-go/pkg/testhelpers"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/entities"
+	mock "github.com/cegeka-everesst/newrelic-client-go/pkg/testhelpers"
 )
 
 func TestIntegrationDashboard_Billboard(t *testing.T) {

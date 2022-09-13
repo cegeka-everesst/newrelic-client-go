@@ -4,7 +4,7 @@ package workloads
 import (
 	"context"
 
-	"github.com/newrelic/newrelic-client-go/pkg/common"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/common"
 )
 
 // Creates a new workload.

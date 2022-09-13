@@ -9,9 +9,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/newrelic/newrelic-client-go/pkg/errors"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/errors"
 
-	mock "github.com/newrelic/newrelic-client-go/pkg/testhelpers"
+	mock "github.com/cegeka-everesst/newrelic-client-go/pkg/testhelpers"
 )
 
 var (
@@ -223,7 +223,7 @@ var (
 	}
 )
 
-//REST API integration test (deprecated)
+// REST API integration test (deprecated)
 func TestIntegrationNrqlConditions(t *testing.T) {
 	t.Parallel()
 

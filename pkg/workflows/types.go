@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/newrelic/newrelic-client-go/pkg/ai"
-	"github.com/newrelic/newrelic-client-go/pkg/nrtime"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/ai"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/nrtime"
 )
 
 // AiWorkflowsCreateErrorType - Type of create error

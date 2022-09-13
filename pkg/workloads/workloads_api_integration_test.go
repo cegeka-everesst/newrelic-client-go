@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/newrelic/newrelic-client-go/pkg/common"
-	mock "github.com/newrelic/newrelic-client-go/pkg/testhelpers"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/common"
+	mock "github.com/cegeka-everesst/newrelic-client-go/pkg/testhelpers"
 )
 
 func TestIntegrationWorkloadCreate(t *testing.T) {

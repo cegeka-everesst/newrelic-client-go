@@ -4,7 +4,7 @@ import (
 	"context"
 	"strings"
 
-	"github.com/newrelic/newrelic-client-go/internal/http"
+	"github.com/cegeka-everesst/newrelic-client-go/internal/http"
 )
 
 // NerdGraphQueryWithContext works similarly to the default client's NerdGraphQueryWithContext but with a custom error

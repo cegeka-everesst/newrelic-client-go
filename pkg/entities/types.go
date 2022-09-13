@@ -5,13 +5,13 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/newrelic/newrelic-client-go/pkg/accounts"
-	"github.com/newrelic/newrelic-client-go/pkg/ai"
-	"github.com/newrelic/newrelic-client-go/pkg/common"
-	"github.com/newrelic/newrelic-client-go/pkg/nrdb"
-	"github.com/newrelic/newrelic-client-go/pkg/nrtime"
-	"github.com/newrelic/newrelic-client-go/pkg/servicelevel"
-	"github.com/newrelic/newrelic-client-go/pkg/users"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/accounts"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/ai"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/common"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/nrdb"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/nrtime"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/servicelevel"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/users"
 )
 
 type AccountStatus string

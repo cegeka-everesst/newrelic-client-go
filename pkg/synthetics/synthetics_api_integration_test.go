@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"os"
 
-	mock "github.com/newrelic/newrelic-client-go/pkg/testhelpers"
+	mock "github.com/cegeka-everesst/newrelic-client-go/pkg/testhelpers"
 )
 
 var tv bool = true
@@ -42,7 +42,7 @@ func TestSyntheticsSecureCredential_Basic(t *testing.T) {
 	require.Nil(t, deleteResp)
 }
 
-//Test simple browser monitor
+// Test simple browser monitor
 func TestSyntheticsSimpleBrowserMonitor_Basic(t *testing.T) {
 	t.Parallel()
 
@@ -149,7 +149,7 @@ func TestSyntheticsSimpleBrowserMonitor_Basic(t *testing.T) {
 	require.NoError(t, err)
 }
 
-//TestSyntheticsSimpleMonitor_Basic function to test simple monitor
+// TestSyntheticsSimpleMonitor_Basic function to test simple monitor
 func TestSyntheticsSimpleMonitor_Basic(t *testing.T) {
 	t.Parallel()
 	testAccountID, err := mock.GetTestAccountID()
@@ -247,7 +247,7 @@ func TestSyntheticsSimpleMonitor_Basic(t *testing.T) {
 	require.NoError(t, err)
 }
 
-//TestSyntheticsScriptApiMonitor_Basic to test the script api monitor
+// TestSyntheticsScriptApiMonitor_Basic to test the script api monitor
 func TestSyntheticsScriptApiMonitor_Basic(t *testing.T) {
 	t.Parallel()
 
@@ -360,7 +360,7 @@ func TestSyntheticsScriptApiMonitor_Basic(t *testing.T) {
 	require.NotNil(t, deleteScriptApiMonitor)
 }
 
-//TestSyntheticsScriptBrowserMonitor_Basic function to test script browser monitor
+// TestSyntheticsScriptBrowserMonitor_Basic function to test script browser monitor
 func TestSyntheticsScriptBrowserMonitor_Basic(t *testing.T) {
 	t.Parallel()
 	testAccountID, err := mock.GetTestAccountID()

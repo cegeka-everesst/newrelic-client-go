@@ -3,7 +3,7 @@ package apm
 import (
 	"context"
 
-	"github.com/newrelic/newrelic-client-go/pkg/errors"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/errors"
 )
 
 // Label represents a New Relic label.

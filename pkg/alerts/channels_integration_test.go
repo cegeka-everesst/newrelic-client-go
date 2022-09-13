@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/newrelic/newrelic-client-go/internal/serialization"
+	"github.com/cegeka-everesst/newrelic-client-go/internal/serialization"
 )
 
 func TestIntegrationChannel(t *testing.T) {

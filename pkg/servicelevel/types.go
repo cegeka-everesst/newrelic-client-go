@@ -2,9 +2,9 @@
 package servicelevel
 
 import (
-	"github.com/newrelic/newrelic-client-go/pkg/accounts"
-	"github.com/newrelic/newrelic-client-go/pkg/common"
-	"github.com/newrelic/newrelic-client-go/pkg/nrtime"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/accounts"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/common"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/nrtime"
 )
 
 // ServiceLevelObjectiveRollingTimeWindowUnit - The rolling time window units.

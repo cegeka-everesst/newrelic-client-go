@@ -1,6 +1,6 @@
 # notifications
 --
-    import "github.com/newrelic/newrelic-client-go/pkg/notifications"
+    import "github.com/cegeka-everesst/newrelic-client-go/pkg/notifications"
 
 ## Usage
 

@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	mock "github.com/newrelic/newrelic-client-go/pkg/testhelpers"
+	mock "github.com/cegeka-everesst/newrelic-client-go/pkg/testhelpers"
 )
 
 func TestIntegrationAPIAccess_InsightsInsertKeys(t *testing.T) {
@@ -73,7 +73,7 @@ func TestIntegrationAPIAccess_InsightsQueryKeys(t *testing.T) {
 	require.NotNil(t, deleteResult)
 }
 
-//nolint: unused
+// nolint: unused
 func newIntegrationTestClient(t *testing.T) APIAccess {
 	tc := mock.NewIntegrationTestConfig(t)
 

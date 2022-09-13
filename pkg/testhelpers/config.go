@@ -8,8 +8,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/newrelic/newrelic-client-go/pkg/config"
-	"github.com/newrelic/newrelic-client-go/pkg/region"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/config"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/region"
 )
 
 const (

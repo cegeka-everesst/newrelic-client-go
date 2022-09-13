@@ -4,7 +4,7 @@ package synthetics
 import (
 	"context"
 
-	"github.com/newrelic/newrelic-client-go/pkg/errors"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/errors"
 )
 
 // Create a Synthetic Broken Links monitor

@@ -2,7 +2,7 @@
 package nrtime
 
 import (
-	"github.com/newrelic/newrelic-client-go/internal/serialization"
+	"github.com/cegeka-everesst/newrelic-client-go/internal/serialization"
 )
 
 // TimeWindowInput - Represents a time window input.

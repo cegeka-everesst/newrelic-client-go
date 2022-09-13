@@ -4,7 +4,7 @@ package notifications
 import (
 	"context"
 
-	"github.com/newrelic/newrelic-client-go/pkg/ai"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/ai"
 )
 
 // Create a Channel

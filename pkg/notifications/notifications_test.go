@@ -6,7 +6,7 @@ package notifications
 import (
 	"testing"
 
-	mock "github.com/newrelic/newrelic-client-go/pkg/testhelpers"
+	mock "github.com/cegeka-everesst/newrelic-client-go/pkg/testhelpers"
 )
 
 func newMockResponse(t *testing.T, mockJSONResponse string, statusCode int) Notifications {

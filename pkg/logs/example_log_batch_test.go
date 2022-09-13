@@ -9,14 +9,14 @@ import (
 	"os"
 	"time"
 
-	"github.com/newrelic/newrelic-client-go/pkg/config"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/config"
 )
 
 const (
 	BatchTimeoutSeconds = 5
 )
 
-//func TestExample_log_batch(t *testing.T) {
+// func TestExample_log_batch(t *testing.T) {
 func Example_basic() {
 	// Initialize the client configuration.  A New Relic License Key is required to communicate with the backend API.
 	cfg := config.New()

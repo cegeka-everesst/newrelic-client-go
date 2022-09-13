@@ -49,7 +49,7 @@
 - **alerts:** remove pagination from ListMultiLocationSyntheticsConditions
 - **alerts:** make error handling more resilient for alert policies
 - **alerts:** don't omitempty for muting rule's enabled field
-- **alerts:** ensure multiple channels can be added via /alerts_policy_channel.json endpoint ([#114](https://github.com/newrelic/newrelic-client-go/issues/114))
+- **alerts:** ensure multiple channels can be added via /alerts_policy_channel.json endpoint ([#114](https://github.com/cegeka-everesst/newrelic-client-go/issues/114))
 - **alerts:** handle more complex JSON structures in headers and/or payload
 - **alerts:** add custom unmarshaling for ConditionTerm
 - **alerts:** Updating incorrect AlertEvents params
@@ -63,7 +63,7 @@
 - **alerts:** include missing types to generate
 - **alerts:** use pointers for the result struct
 - **alerts:** drop incorrect MonitorID flag from MultiLocationSyntheticsCondition
-- **alerts:** custom unmarshal of channel configuration Headers and Payload fields ([#102](https://github.com/newrelic/newrelic-client-go/issues/102))
+- **alerts:** custom unmarshal of channel configuration Headers and Payload fields ([#102](https://github.com/cegeka-everesst/newrelic-client-go/issues/102))
 - **alerts:** always send infra condition description even if its an empty string
 - **alerts:** add missing Outlier type to condition NrqlConditionTypes enum
 - **alerts:** rename NrqlConditionTerms to singular for accuracy
@@ -201,7 +201,7 @@
 - update example
 - update community support information
 - document some methods
-- **README:** Update example in README, closes [#225](https://github.com/newrelic/newrelic-client-go/issues/225)
+- **README:** Update example in README, closes [#225](https://github.com/cegeka-everesst/newrelic-client-go/issues/225)
 - **alerts:** add package-level documentation and examples
 - **apm:** add package-level documentation and examples
 - **build:** Update README for commit message format
@@ -324,7 +324,7 @@
 - **alerts:** add update methods for baseline and static NRQL conditions
 - **alerts:** add get method for query NRQL conditions
 - **alerts:** add nerdgraph-based alert condition deletion
-- **alerts:** add GetSyntheticsCondition method ([#105](https://github.com/newrelic/newrelic-client-go/issues/105))
+- **alerts:** add GetSyntheticsCondition method ([#105](https://github.com/cegeka-everesst/newrelic-client-go/issues/105))
 - **alerts:** Implement multi-location synthetics conditions
 - **alerts:** add search method for NRQL conditions
 - **alerts:** implement NerdGraph policy search
@@ -581,5 +581,7 @@
 - **workloads:** query with GUID per upstream API change
 - **workloads:** remove deprecated fields
 
-[Unreleased]: https://github.com/newrelic/newrelic-client-go/compare/v1.0.1...HEAD
-[v1.0.1]: https://github.com/newrelic/newrelic-client-go/compare/v1.0.0...v1.0.1
+
+[Unreleased]: https://github.com/cegeka-everesst/newrelic-client-go/compare/v1.0.1...HEAD
+[v1.0.1]: https://github.com/cegeka-everesst/newrelic-client-go/compare/v1.0.0...v1.0.1
+

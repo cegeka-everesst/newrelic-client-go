@@ -5,7 +5,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/newrelic/newrelic-client-go/pkg/common"
+	"github.com/cegeka-everesst/newrelic-client-go/pkg/common"
 )
 
 // Create a `DashboardEntity`
